@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="icon" href="images/favicon/favicon.png" type="image/x-icon">
+  <link rel="shortcut icon" href="images/favicon/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/lib.css">
+  <title>LEVEL Fitness</title>
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <nav class="header__nav">
+        <a class="header__logo" href="#">
+          <img class="header__img" src="images/logo.svg" alt="Логотип">
+        </a>
+        <button class="header__button" type="button">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <div class="header__contact">
+          <span class="header__address" href="#">
+            г. Батайск, М. Горького, д. 84
+          </span>
+          <a class="header__social" href="#">
+            Мы в Instagram
+          </a>
+        </div>
+        <div class="header__menu" id="menu">
+          <div class="header__inner">
+            <a class="header__tel" href="tel:+78632727277">
+              +7 863 272-72-77
+            </a>
+            <button class="header__btn" type="button">
+              На тренировку
+            </button>
+          </div>
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__link" href="#programs">
+                Групповые программы
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#trainers">
+                Тренара
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#interior">
+                Интерьер
+              </a>
+            </li>
+            <li class="header__item">
+              <a class="header__link" href="#contacts">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <div class="menu">
+    <ul class="menu__list">
+      <li class="menu__item">
+        <a class="menu__link" href="#programs" class="menu__link">Групповые программы</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#trainers" class="menu__link">Тренара</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#interior" class="menu__link">Интерьер</a>
+      </li>
+      <li class="menu__item">
+        <a class="menu__link" href="#contacts" class="menu__link">Контакты</a>
+      </li>
+    </ul>
+    <div class="menu__contact">
+      <span class="menu__address">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#E7490F">
+          <path
+            d="M11.999 1.49976C9.81178 1.50235 7.71487 2.37238 6.16826 3.91899C4.62165 5.4656 3.75162 7.56252 3.74902 9.74976C3.74902 16.8088 11.249 22.1409 11.5684 22.3643C11.6947 22.4525 11.845 22.4998 11.999 22.4998C12.1531 22.4998 12.3034 22.4525 12.4297 22.3643C12.749 22.1409 20.249 16.8088 20.249 9.74976C20.2464 7.56252 19.3764 5.4656 17.8298 3.91899C16.2832 2.37238 14.1863 1.50235 11.999 1.49976ZM11.9996 6.75003C12.5929 6.75003 13.1729 6.92597 13.6663 7.25562C14.1596 7.58526 14.5441 8.0538 14.7712 8.60198C14.9983 9.15016 15.0577 9.75336 14.9419 10.3353C14.8262 10.9172 14.5405 11.4518 14.1209 11.8713C13.7013 12.2909 13.1668 12.5766 12.5848 12.6924C12.0029 12.8081 11.3997 12.7487 10.8515 12.5217C10.3033 12.2946 9.83481 11.9101 9.50516 11.4167C9.17552 10.9234 8.99957 10.3434 8.99957 9.75003C8.99956 9.35606 9.07715 8.96595 9.22791 8.60196C9.37867 8.23798 9.59965 7.90726 9.87823 7.62868C10.1568 7.3501 10.4875 7.12913 10.8515 6.97837C11.2155 6.82761 11.6056 6.75002 11.9996 6.75003Z" />
+        </svg>
+        г. Батайск, М. Горького, д. 84</span>
+      <a class="menu__social" href="#">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="#E7490F">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M10.9058 2.00305C11.2306 2.00254 11.593 2.00305 12.0001 2.00305C15.2571 2.00305 15.6431 2.01474 16.9293 2.0732C18.1186 2.12759 18.7641 2.32635 19.1941 2.49334C19.7634 2.71446 20.1692 2.97879 20.5959 3.40579C21.0229 3.83279 21.2872 4.23945 21.5088 4.80878C21.6757 5.23832 21.8747 5.8839 21.9288 7.07339C21.9873 8.35947 22 8.7458 22 12.0017C22 15.2575 21.9873 15.6438 21.9288 16.9299C21.8745 18.1194 21.6757 18.765 21.5088 19.1945C21.2877 19.7639 21.0229 20.1692 20.5959 20.596C20.169 21.023 19.7636 21.2873 19.1941 21.5084C18.7646 21.6762 18.1186 21.8744 16.9293 21.9288C15.6434 21.9873 15.2571 22 12.0001 22C8.74291 22 8.35688 21.9873 7.07097 21.9288C5.88163 21.8739 5.23613 21.6752 4.80588 21.5082C4.23662 21.2871 3.83001 21.0227 3.40307 20.5957C2.97612 20.1687 2.71183 19.7631 2.49022 19.1935C2.32326 18.764 2.12427 18.1184 2.07014 16.9289C2.01169 15.6428 2 15.2565 2 11.9986C2 8.74071 2.01169 8.35642 2.07014 7.07034C2.12453 5.88085 2.32326 5.23527 2.49022 4.80522C2.71132 4.23589 2.97612 3.82923 3.40307 3.40223C3.83001 2.97523 4.23662 2.7109 4.80588 2.48927C5.23587 2.32152 5.88163 2.12327 7.07097 2.06862C8.19627 2.01779 8.63236 2.00254 10.9058 2V2.00305ZM18.5115 4.02875C17.7034 4.02875 17.0477 4.68373 17.0477 5.49223C17.0477 6.30047 17.7034 6.95622 18.5115 6.95622C19.3197 6.95622 19.9753 6.30047 19.9753 5.49223C19.9753 4.68398 19.3197 4.02875 18.5115 4.02875ZM12.0001 5.73928C8.54062 5.73928 5.73575 8.5445 5.73575 12.0044C5.73575 15.4644 8.54062 18.2683 12.0001 18.2683C15.4596 18.2683 18.2635 15.4644 18.2635 12.0044C18.2635 8.5445 15.4596 5.73928 12.0001 5.73928Z" />
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M12.0001 7.93781C14.2456 7.93781 16.0663 9.75839 16.0663 12.0044C16.0663 14.2503 14.2456 16.0711 12.0001 16.0711C9.75436 16.0711 7.934 14.2503 7.934 12.0044C7.934 9.75839 9.75436 7.93781 12.0001 7.93781Z" />
+        </svg>
+        Мы в Instagram
+      </a>
+      <a class="menu__tel" href="tel:+78632727277">
+        <svg width="16" height="17" viewBox="0 0 16 17" fill="#E7490F">
+          <path
+            d="M15.2228 11.2455L11.4696 9.63702C11.2736 9.55266 11.0596 9.5187 10.8472 9.53821C10.6347 9.55773 10.4306 9.63012 10.2533 9.74877L8.24652 11.0864C7.02006 10.4899 6.02741 9.50164 5.42548 8.27784L5.42563 8.27768L6.75861 6.2409C6.87463 6.06408 6.94503 5.86126 6.96349 5.65057C6.98195 5.43989 6.94791 5.22791 6.8644 5.03361L5.25442 1.27721C5.14482 1.02223 4.95559 0.809603 4.71503 0.671173C4.47448 0.532742 4.19556 0.475954 3.92004 0.509313C2.83735 0.648518 1.84237 1.17712 1.12098 1.99637C0.399578 2.81562 0.00110656 3.86947 0 4.96107C0 11.3237 5.17632 16.5 11.539 16.5C12.6306 16.4989 13.6844 16.1004 14.5037 15.379C15.3229 14.6576 15.8515 13.6626 15.9907 12.5799C16.024 12.3044 15.9672 12.0255 15.8287 11.7849C15.6903 11.5444 15.4777 11.3552 15.2228 11.2455Z" />
+        </svg>
+        +7 863 272-72-77
+      </a>
+    </div>
+    <button class="menu__btn" type="button">На тренировку</button>
+  </div>
+
+  <main class="main">
+    <section class="hero">
+      <ul class="hero__slider">
+        <li class="hero__item" style="
+        background: 
+  url('images/girl.jpg') no-repeat left , 
+  url('images/main-banner.jpg') no-repeat right ;
+  ">
+          <div class=" container">
+            <div class="hero__text">
+              <h1 class="hero__adv">
+                Более <span class="hero__span">20 </span>различных
+                групповых программ
+              </h1>
+              <p class="hero__p">
+                Огромный выбор групповых программ, которые проведут наши тренеры. Современный зал
+                и позитивная атмосфера принесет не только пользу, но и доставит удовольствие от тренировок.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="hero__item" style="background: 
+  url('images/girl.jpg')   no-repeat left / contain , 
+  url('images/main-banner.jpg') no-repeat right / contain;">
+          <div class=" container">
+            <div class="hero__text">
+              <h1 class="hero__adv">
+                Более <span class="hero__span">20 </span>различных
+                групповых программ
+              </h1>
+              <p class="hero__p">
+                Огромный выбор групповых программ, которые проведут наши тренеры. Современный зал
+                и позитивная атмосфера принесет не только пользу, но и доставит удовольствие от тренировок.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="hero__item" style="background: 
+  url('images/girl.jpg')   no-repeat left / contain , 
+  url('images/main-banner.jpg') no-repeat right / contain;">
+          <div class=" container">
+            <div class="hero__text">
+              <h1 class="hero__adv">
+                Более <span class="hero__span">20 </span>различных
+                групповых программ
+              </h1>
+              <p class="hero__p">
+                Огромный выбор групповых программ, которые проведут наши тренеры. Современный зал
+                и позитивная атмосфера принесет не только пользу, но и доставит удовольствие от тренировок.
+              </p>
+            </div>
+          </div>
+        </li>
+        <li class="hero__item" style="background: 
+  url('images/girl.jpg')   no-repeat left / contain , 
+  url('images/main-banner.jpg') no-repeat right / contain;">
+          <div class=" container">
+            <div class="hero__text">
+              <h1 class="hero__adv">
+                Более <span class="hero__span">20 </span>различных
+                групповых программ
+              </h1>
+              <p class="hero__p">
+                Огромный выбор групповых программ, которые проведут наши тренеры. Современный зал
+                и позитивная атмосфера принесет не только пользу, но и доставит удовольствие от тренировок.
+              </p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <section class="about">
+      <div class="container">
+        <div class="about__content">
+          <div class="about__box">
+            <h3 class="subtitle">о клубе</h3>
+            <h2 class="title about__title">Начни свое преображение с Level Fitness</h2>
+            <p class="text">
+              Все групповые программы Level Fitness построенны на профессионализме, неравнодушии и чувстве
+              прекрасного.
+            </p>
+            <p class="text">
+              Главная особенность — осознанные тренировки, основанные на глубоких знаниях человеческой, биомеханики.
+              Наш
+              подход обеспечит не только красоту тела, но и здоровье.
+            </p>
+          </div>
+          <div class="about__inner">
+            <img class="about__img" src="images/about-img.png" alt="Картинка з девушкой" width="445" height="303">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefits section">
+      <div class="container">
+        <h3 class="subtitle">почему мы</h3>
+        <h2 class="title benefits__title">Наши преимущества</h2>
+        <ul class="benefits__items">
+          <li class="benefits__item">
+            <div class="benefits__box">
+              <img class="benefits__img" src="images/benefit-1.png" alt="Мужик со штангой" width="350" height="404">
+            </div>
+            <h3 class="benefits__subtitle">
+              Топовые тренери
+            </h3>
+            <p class="benefits__text">
+              Для вас работают преподаватели имеющие
+              в общей сумме более 10 лет преподавательской практики, непрерывно совершенствующие свой уровень знаний.
+            </p>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__box">
+              <img class="benefits__img" src="images/benefit-2.png" alt="Девушка с гантелей" width="350" height="404">
+            </div>
+            <h3 class="benefits__subtitle">
+              Улучшение здоровья
+            </h3>
+            <p class="benefits__text">
+              Мы помогаем обрести уверенность в себе,
+              с помощью раскрытия таланта и развития физических возможностей. Поможем уйти блокам и зажатости. А взамен
+              придет лёгкость, гибкость тела и ума.
+            </p>
+          </li>
+          <li class="benefits__item">
+            <div class="benefits__box">
+              <img class="benefits__img" src="images/benefit-3.png" alt="Девушка бежит" width="350" height="404">
+            </div>
+            <h3 class="benefits__subtitle">
+              Насыщенное расписание
+            </h3>
+            <p class="benefits__text">
+              Возможность заниматься в любое время
+              с 08:00 до 22:00
+            </p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="programs" id="programs">
+      <div class="container">
+        <div class="programs__inner">
+          <div class="programs__box">
+            <h5 class="subtitle">как будем работать</h3>
+              <h3 class="title">Наши программы</h2>
+                <div class="programs__p">
+                  <p class="text">
+                    У нас широкий и сбалансированный выбор тренировок. Разнообразие нагрузок поможет комплексно развить
+                    тело
+                    и решить любые задачи.
+                  </p>
+                  <p class="text">
+                    В основе всех тренировок — движение в трех плоскостях для наиболее эффективной и безопасной
+                    активации
+                    тела! Тренируйтесь в мини-группе или приходите на индивидуальные занятия.
+                  </p>
+                </div>
+          </div>
+          <div class="programs__photo">
+            <img class="programs__img" src="images/sport-girl.png" alt="Спортивная девушка" width="445" height="303">
+          </div>
+        </div>
+        <ul class="programs__cards">
+          <!-- <li class="programs__card">
+            <article class="card">
+              <img class="card__picture" src="images/program-1.png" alt="HIT-тренинг" width="310" height="180">
+              <h4 class="card__title">HIT-тренинг</h3>
+                <p class="card__text">Тренировка на мышцы ног и ягодиц,
+                  с использованием резинок и отягощения
+                  + 30 минут растяжка</p>
+                <button class="card__btn" type="button">Записаться</button>
+            </article>
+          </li>
+          <li class="programs__card">
+            <article class="card">
+              <img class="card__picture" src="images/program-2.png" alt="Пилатес" width="310" height="180">
+              <h4 class="card__title">Пилатес</h3>
+                <p class="card__text">Пилатес, как особое направление при реабилитации танцоров и спортсменов после
+                  травм, был представлен в 20-е годы прошлого столетия. Его основатель - Джозеф Пилатес, представивший
+                  миру программу эффективных упражнений, помогающих быстро и безболезненно восстановится.</p>
+                <button class="card__btn" type="button">Записаться</button>
+            </article>
+          </li>
+          <li class="programs__card">
+            <article class="card">
+              <img class="card__picture" src="images/program-3.png" alt="Зумба" width="310" height="180">
+              <h4 class="card__title">Зумба</h3>
+                <p class="card__text">Zumba – это фитнес-программа, состоящая из танцевальных движений под мотивы в
+                  стиле латино. Она включает в себя микс из элементов таких активных танцев, как самба, хип-хоп, сальса,
+                  меренге, бачата, кумбия, фламенко и некоторых других.</p>
+                <button class="card__btn" type="button">Записаться</button>
+            </article>
+          </li>
+          <li class="programs__card">
+            <article class="card">
+              <img class="card__picture" src="images/program-4.png" alt="Табата" width="310" height="180">
+              <h4 class="card__title">Табата</h3>
+                <p class="card__text">Протокол Табата — принцип построения интервальной тренировки. Состоит из серий
+                  коротких 30-секундных интервалов: 20 секунд максимальной нагрузки через 10 секунд отдыха. 8 таких
+                  повторений занимают 4 минуты — это один цикл Табата. Между циклами отдых 1-2 минуты.</p>
+                <button class="card__btn" type="button">Записаться</button>
+            </article>
+          </li>
+          <li class="programs__card">
+            <article class="card">
+              <img class="card__picture" src="images/program-5.png" alt="Стретчинг" width="310" height="180">
+              <h4 class="card__title">Стретчинг</h3>
+                <p class="card__text">Stretching – это система упражнений, основная цель которых – растяжка связок и
+                  мышц, а также повышение гибкости тела. Название этого направления фитнеса позаимствовано из
+                  английского языка: слово Stretch в переводе на русский означает «эластичность, растяжение».</p>
+                <button class="card__btn" type="button">Записаться</button>
+            </article>
+          </li>
+          <li class="programs__card">
+            <article class="card">
+              <img class="card__picture" src="images/program-6.png" alt="HIT-тренинг" width="310" height="180">
+              <h4 class="card__title">HIT-тренинг</h3>
+                <p class="card__text">High-Intensity Interval Training (HIIT, или по-русски ВИИТ) — это
+                  высокоинтенсивный интервальный тренинг, состоящий из интенсивных серий упражнений и активного отдыха
+                  между ними.
+                </p>
+                <button class="card__btn" type="button">Записаться</button>
+            </article>
+          </li> -->
+        </ul>
+        <button class="programs__button" type="button">Посмотреть все программы</button>
+      </div>
+    </section>
+    <section class="registration">
+      <div class="container">
+        <div class="registration__form">
+          <h4 class="registration__title">Приходите на первое бесплатное занятие</h3>
+            <div class="registration__box">
+              <p class="registration__text">
+                Первое занятие является бесплатным исключительно для новых посетителей фитнесцентра.
+              </p>
+              <p class="registration__text">
+                Стоимость посещения групповых занятий, а так же стоимость абониментов в фитнес центр уточняйте у
+                менеджера.
+              </p>
+            </div>
+            <button class="registation__btn" type="button">зарегистрироваться</button>
+        </div>
+      </div>
+    </section>
+    <section class="trainers" id="trainers">
+      <div class="container">
+        <div class="trainers__content">
+          <div class="trainers__box">
+            <h5 class="subtitle">лучшие тренеры</h3>
+              <h3 class="title">Наш тренерский состав</h2>
+                <p class="text">Мы собрали команду настоящих профессионалов своего дела. Каждый тренер непрерывно
+                  совершенствуется и повышает квалификацию. Благодаря многолетнему опыту и многопрофильному образованию
+                  наших
+                  преподавателей каждое занятие выстраивается по новому сценарию, творчески и с заботой о каждом
+                  клиенте.
+                </p>
+          </div>
+          <div class="trainers__inner">
+            <img class="trainers__pic" src="images/sport-girl.png" alt="Спортивная девушка" width="445" height="303">
+          </div>
+        </div>
+        <ul class="trainers__cards">
+          <li class="trainers__card">
+            <article class="card">
+              <img class="card__picture" src="images/trainer-1.png" alt="Иванов Андрей" width="310" height="180">
+              <h3 class="card__title">Иванов Андрей</h3>
+              <p class="card__text trainers__text">Мастер спорта. Специалист. Профессионал. Красавчик.</p>
+            </article>
+          </li>
+          <li class="trainers__card">
+            <article class="card">
+              <img class="card__picture" src="images/trainer-2.png" alt="Варламова Екатерина" width="310" height="180">
+              <h3 class="card__title">Варламова Екатерина</h3>
+              <p class="card__text trainers__text">Мастер спорта. Специалист. Профессионал. Красавчик зафиксированная на
+                каком-либо материальном носителе человеческая мысль.</p>
+            </article>
+          </li>
+          <li class="trainers__card">
+            <article class="card">
+              <img class="card__picture" src="images/trainer-3.png" alt="Колесников Илья" width="310" height="180">
+              <h4 class="card__title">Колесников Илья Александрович</h3>
+                <p class="card__text trainers__text">Мастер спорта. Специалист. Профессионал. Красавчик.</p>
+            </article>
+          </li>
+          <li class="trainers__card">
+            <article class="card">
+              <img class="card__picture" src="images/trainer-4.png" alt="Прогпама 4" width="310" height="180">
+              <h4 class="card__title">Щербаков Александр</h3>
+                <p class="card__text trainers__text">Мастер спорта. Специалист. Профессионал. Красавчик.</p>
+            </article>
+          </li>
+          <li class="trainers__card">
+            <article class="card">
+              <img class="card__picture" src="images/trainer-5.png" alt="Морозова Полина" width="310" height="180">
+              <h4 class="card__title">Морозова Полина</h3>
+                <p class="card__text trainers__text">Мастер спорта. Специалист. Профессионал. Красавчик.</p>
+            </article>
+          </li>
+          <li class="trainers__card">
+            <article class="card">
+              <img class="card__picture" src="images/trainer-6.png" alt="Петров Николай" width="310" height="180">
+              <h4 class="card__title">Петров Николай</h3>
+                <p class="card__text trainers__text">Мастер спорта. Специалист. Профессионал. Красавчик.</p>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="transformation">
+      <div class="container">
+        <h2 class="transformation__title">
+          Начни свое преображение
+        </h2>
+        <form class="transformation__form" action="#">
+          <label class="transformation__label" for="name">Имя</label>
+          <input class="transformation__input" type="text" id="name" name="name" required placeholder="Например Алина">
+
+          <label class="transformation__label" for="tel">Номер телефона</label>
+          <input class="transformation__input transformation__input--margin" type="tel" id="tel" name="telephone"
+            required placeholder="+7 (___) ___ — __ — __">
+          <button class="transformation__sign-up" type="submit">Записаться на тренировку</button>
+        </form>
+      </div>
+    </section>
+    <section class="interior section" id="interior">
+      <div class="container">
+        <h5 class="subtitle">приглашаем в гости</h3>
+          <h3 class="title interior__title">Интерьер в фитнес-центре</h2>
+            <ul class="interior__list">
+              <li class="interior__item">
+                <img class="interior__img" src="images/interior-1.png" alt="Интерьер" width="350" height="300">
+              </li>
+              <li class="interior__item">
+                <img class="interior__img" src="images/interior-2.png" alt="Интерьер" width="350" height="300">
+              </li>
+              <li class="interior__item">
+                <img class="interior__img" src="images/interior-3.png" alt="Интерьер" width="350" height="300">
+              </li>
+              <li class="interior__item">
+                <img class="interior__img" src="images/interior-4.png" alt="Интерьер" width="350" height="300">
+              </li>
+              <li class="interior__item">
+                <img class="interior__img" src="images/interior-5.png" alt="Интерьер" width="350" height="300">
+              </li>
+              <li class="interior__item">
+                <img class="interior__img" src="images/interior-6.png" alt="Интерьер" width="350" height="300">
+              </li>
+            </ul>
+      </div>
+    </section>
+  </main>
+ 
+  <footer class="footer" id="contacts">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__info">
+          <span class="footer__contact footer__contact--timetable">Понедельник — Пятница: 07:00–23:00
+            Суббота — Воскресенье: 09:00–22:00</span>
+          <span class="footer__contact footer__contact--address">Адрес: г. Батайск, М. Горького, д. 84</span>
+          <span class=" footer__contact footer__contact--tel">Телефон: +7 (863) 272–72–77</span>
+          <p class="footer__text">Level Fitness это современный фитнес центр в самом центре города Батайска.
+            Оборудованный итальянскими тренажерами и залами для групповых тренировок.</p>
+        </div>
+        <div class="footer__map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2713.80164602542!2d39.74405831561439!3d47.14215197915665!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3bcedd7b51a71%3A0x21429637ad27dba8!2z0YPQuy4g0JzQsNC60YHQuNC80LAg0JPQvtGA0YzQutC-0LPQviwgODQsINCR0LDRgtCw0LnRgdC6LCDQoNC-0YHRgtC-0LLRgdC60LDRjyDQvtCx0LsuLCDQoNC-0YHRgdC40Y8sIDM0Njg4MA!5e0!3m2!1sru!2sua!4v1639925368632!5m2!1sru!2sua"
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+      <span class="footer__copy">
+        Level Fitness © 2021
+      </span>
+    </div>
+  </footer>
+
+  <div class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <button class="modal__close">
+          <span></span>
+          <span></span>
+        </button>
+        <div class="modal__img">
+          <img class="modal__img" src="images/modal.png" alt="Зумба" width="540" height="379">
+        </div>
+        <form action="#" class="modal__form">
+          <label class="modal__label" for="name-id">Имя</label>
+          <input class="modal__input" type="text" name="name" id="name-id" placeholder="Например Алина" required>
+          <label class="modal__label" for="tel-id">Номер телефона</label>
+          <input class="modal__input" type="tel" name="telephone" id="tel-id" placeholder="+7 (___) ___ — __ — __"
+            required>
+          <button class="modal__btn" type="submit">Записаться на тренировку</button>
+          <div class="modal__desc">Спортивное счастье рядом!</div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ 
+ 
+  <script src="dist/script.js"></script>
+</body>
+
+</html>
